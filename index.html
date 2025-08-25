@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Madurai Routes Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <div id="container">
+    <!-- Left Panel -->
+    <div id="panel-left">
+      <h2>⭐ Recommended Routes</h2>
+      <div id="recommended-list"></div>
+    </div>
+
+    <!-- Right Panel -->
+    <div id="panel-right">
+      <div id="search-section">
+        <h2>🔍 Search Route</h2>
+        <form id="search-form">
+          <select id="start" required>
+            <option value="" disabled selected>Start Location</option>
+          </select>
+          <select id="end" required>
+            <option value="" disabled selected>End Location</option>
+          </select>
+          <button type="submit">Find Route</button>
+        </form>
+        <div id="search-result"></div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
